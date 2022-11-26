@@ -1,7 +1,7 @@
 pipeline {
     agent any 
 parameters {
-  string(name: 'BRANCH_NAME', description: 'devopsdeepdive')
+  string(name: 'name', description: 'devopsdeepdive')
 }
      stages {
         stage('Checkout') { 
@@ -11,7 +11,8 @@ parameters {
         }
         stage('Build') { 
             steps {
-                sh 'mvn compile' 
+                sh 'mvn compile'
+		    sleep time: 2, unit: 'MINUTES'
             }
         }
         stage('Test') { 
