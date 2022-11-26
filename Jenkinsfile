@@ -1,5 +1,8 @@
 pipeline {
     agent any 
+	parameters {
+  string description: 'This is my branch', name: 'BRANCH_NAME'
+}
      stages {
         stage('Checkout') { 
             steps {
