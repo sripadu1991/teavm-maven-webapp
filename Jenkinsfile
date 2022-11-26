@@ -1,7 +1,7 @@
 pipeline {
     agent any 
 parameters {
-  string(name: "BRANCH_NAME", description: "This is my branch")
+  string(name: 'name', description: 'devopsdeepdive')
 }
      stages {
         stage('Checkout') { 
