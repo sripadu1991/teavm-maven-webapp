@@ -1,8 +1,8 @@
 pipeline {
     agent any 
-parameters {
+/* parameters {
   string(name: 'name', description: 'devopsdeepdive')
-}
+} */
      stages {
         stage('Checkout') { 
             steps {
