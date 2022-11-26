@@ -1,7 +1,7 @@
 pipeline {
     agent any 
-	parameters {
-  string(name: 'BRANCH_NAME', description: 'This is my branch')
+parameters {
+  string(name: "BRANCH_NAME", description: "This is my branch")
 }
      stages {
         stage('Checkout') { 
