@@ -22,7 +22,7 @@ pipeline {
                 sh 'mvn package'
             }
         }
-	 stage('Notify') {
+	/* stage('Notify') {
             steps {
 		    if {
 			    slackSend channel: '#devopsdeepdive_batch3', message: 'Build is successful', teamDomain: 'devopsdeepdivebatch', tokenCredentialId: 'slack_batch12' 
@@ -31,6 +31,6 @@ pipeline {
 			 slackSend channel: '#devopsdeepdive_batch3', message: 'Build is failed', teamDomain: 'devopsdeepdivebatch', tokenCredentialId: 'slack_batch12'
 		 }
 	 }
-        }
+        } */
     }
 }
