@@ -24,7 +24,7 @@ pipeline {
         }
 	 stage('Notify') {
             steps {
-                sh 'slackSend channel: '#devopsdeepdive_batch3', message: 'Build is successful', teamDomain: 'devopsdeepdivebatch', tokenCredentialId: 'slack_batch12''
+                slackSend channel: '#devopsdeepdive_batch3', message: 'Build is successful', teamDomain: 'devopsdeepdivebatch', tokenCredentialId: 'slack_batch12'
             }
         }
     }
